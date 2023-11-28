@@ -1,0 +1,15 @@
+lw r4, alpha(r10)
+daddiu r10, r0,#2
+ld r4, alpha(r10)
+ldc1 f2,beta(r0)
+
+;scanf like
+
+sb r2, omega(r0)
+sb r2, omega(r10)
+sh r2, omega(r10)
+daddiu r10, r0,#4
+sw r2, lambda(r10)
+daddiu r10, r0,#5
+sw r2, lambda(r10)
+sd r2, lambda(r0)
